@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: crimson; */
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: darksalmon; */
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+#lnavr i{
+    color:blue
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+}
+
+#textcenter h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1722709993991-710c0147ab0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color:darkseagreen;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url("./landing.png.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url("./BEAR.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 500px){
+    #main{
+        flex-direction: colunm ;
+    }
+    #main #left{
+        width:100%;
+    
+}
+    #main #right{
+        width: 100%;
+    }
+}
