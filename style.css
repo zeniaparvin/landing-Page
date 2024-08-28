@@ -129,7 +129,7 @@ aside > div > img {
 }
 
 aside > div > img:hover {
-  transform: scale(1.3) rotate(7deg);
+  transform: scale(1.2);
 }
 
 #rbottom {
@@ -182,4 +182,5 @@ aside > div > img:hover {
     width: 200px;
     height: 200px;
   }
+  
 }
